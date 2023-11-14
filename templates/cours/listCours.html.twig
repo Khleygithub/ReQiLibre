@@ -1,0 +1,61 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Cours-list {% endblock %}
+
+
+
+{% block body %}
+
+<h1 class="mt-4 mb-5 p-2">LES COURS</h1>
+
+<div class="d-flex flex-wrap justify-content-center" id="container-cours">
+  {% for cour in cours %}
+      <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+                    <div class="col-md-4">
+                    
+                        <iframe  src={{cour.image}} class="img-fluid rounded-start" title="YouTube video player" height="200" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+
+
+
+                    <div class="col-md-8">
+                          <div class="card-body">
+                              <h5 class="card-title">{{cour.title}}</h5>
+                              <p class="card-text"> {{cour.description}}</p>
+                             
+                          </div>
+
+      {#----------------------- RAJOUT DE DELETE COURS ------------------#}
+                 {% if app.user %}
+                    {% if is_granted('ROLE_ADMIN') %}
+                      <a class="liens-delete" href="{{path('app_cours_delete', {id:cour.id})}}"><button type="button" class="btn btn-danger m-2">Supprimer</button></a>
+                    {% endif %}  
+
+                  {% endif %}
+
+      {#----------------------- FIN DU  DELETE ------------------#}
+                    </div>
+
+
+
+
+            </div>
+
+              {#----------------------- UPDATE COURS ------------------#}
+
+              {% if app.user %}
+                  {% if is_granted('ROLE_ADMIN') %}
+                    <a class="liens-update" href="{{path('app_cours_update', {id:cour.id})}}"><button type="button" class="btn btn-secondary m-2">Modifier</button></a>
+                  {% endif %}  
+
+                
+
+              {% endif %}
+      </div>
+
+                {#----------------------- FIN DU  UPDATE ------------------#}
+  {% endfor %}
+</div>
+
+{% endblock %}

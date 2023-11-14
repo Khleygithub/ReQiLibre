@@ -1,0 +1,576 @@
+:root {
+    --green: #017550;
+    --white: #FFFFFF;
+    --brown: #824223;
+    --black: #000000;
+    --blue: #2148D2;
+    --red: #CF2E2E;
+
+}
+
+body, html {
+    /* margin:0; */
+    margin-top: 82px;
+    /* padding: 20px; */
+    font-family: 'inter', sans-serif;
+    font-size: 16px;
+    /* display : flex;
+    align-items: stretch;
+    flex-direction:column; */
+    background-color: var(--white);
+}
+
+
+.container {
+    margin: 30px;
+    padding:20px; 
+}
+
+h1 {
+    font-family: 'inter', sans-serif;
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: var(--brown);
+    text-decoration: underline;
+}
+
+.h1-ReQilibre-titre{
+    font-family: 'inter', sans-serif;
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: var(--brown);
+    text-decoration: underline;
+}
+
+h2 {
+    font-family:sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--green);
+    text-shadow: 3px 2px 2px gray;
+}
+
+
+
+
+h4{
+color: var(--blue);
+font-style: italic;
+}
+
+
+h5{
+    color: var(--green);
+}
+
+p{
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+
+
+                                    /* ANCIENNE NAVBARRRRR*/
+
+
+.header {
+    position:fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    
+    align-items: center;
+    flex-direction: row;
+    background-color: var(--green);
+    border-bottom: 2px solid var(--black);
+    z-index: 3;
+}
+
+
+
+.header-left, .header-right, .header-midle {
+    display: flex;
+    align-items: center;
+}
+
+.header-items {
+    font-size: 1.4rem;
+    color: var(--white);
+    text-decoration: none;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    padding: 1.2rem;
+    cursor: pointer;
+}
+
+
+.icon-deconnect{
+    font-size: 1.5rem;
+    color: var(--white);
+}
+
+.liens-admin{
+    font-size: 1.1rem;
+    color: var(--white);
+    padding: 30px;
+}
+/* ------------------------------ANCIENNE HEADERRRRRR ---------------*/
+
+
+.header-logo>img {
+    height: 80px;
+    margin-left: 20px;
+    
+}
+
+
+
+
+
+/*--------------------- HOVER-HEADER----------- */
+
+
+.header-items>a:hover{
+    scale: 1.1;
+    color: var(--brown);
+    
+    border-bottom: 1px solid;
+    transition: 0.7s;
+    font-weight: bold;
+}
+
+
+.icon-deconnect:hover{
+    color: var(--red);
+    transition: 0.7s;
+    font-weight: bold;
+}
+
+
+.liens-admin:hover{
+    transition: 0.7s;
+    font-weight: bold;
+    color: yellow;
+}
+
+/* ---------------------------@@@@@@ MEDIA --------------------------------------- */
+
+
+/* ---------------------------@MEDIA--- HEADER--------------  */
+
+@media(max-width:880px){
+
+
+    .header {
+        position:fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: space-between;
+        
+        align-items: center;
+        flex-direction: row;
+        background-color: var(--green);
+        border-bottom: 2px solid var(--black);
+        z-index: 3;
+    }
+    
+    
+    
+    .header-left, .header-right, .header-midle {
+        display: flex;
+        align-items: center;
+    }
+    
+    .header-items {
+        font-size: 0.6rem;
+        color: var(--white);
+        text-decoration: none;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        gap: 10px;
+        align-items: center;
+        padding: 1.2rem;
+        cursor: pointer;
+    }
+    
+
+    .icon-deconnect{
+        font-size: 0.6rem;
+    }
+
+
+    .liens-admin{
+        font-size: 0.6rem;
+    }
+
+/* ---------------------------@MEDIA---Nom : REQUILIBRE & Slogan --------------  */
+
+.h1-ReQilibre-titre {
+   
+    padding-left: 500px;
+}
+
+
+
+.slogan-hero-unit{
+    display: flex;
+    justify-content: center;
+   position: relative;
+   bottom: 150px;
+   right: 105px;
+   color: #FFFFFF;
+   font-style: italic;
+   font-size: 14px;
+   margin-left: 200px;
+
+   /* font-weight: bold; */
+
+    
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*------------------------------------ ACCUEIL -----------------------*/
+
+.hero-bg-image {
+    background-color: #824223;
+    height: 526px;
+       
+}
+
+
+.hero-bg-image>h1{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 480px;
+    right: 250px;
+    font-size: 4rem;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.Q-vert{
+    color: #017550;
+}
+
+.slogan-hero-unit{
+    display: flex;
+    justify-content: center;
+   position: relative;
+   bottom: 150px;
+   right: 105px;
+   color: #FFFFFF;
+   font-style: italic;
+   /* font-weight: bold; */
+
+    
+}
+
+
+/* .hero-unit {
+    background-image: url("/public/images/home-pic.png");
+    background-color: #824223;
+} */
+
+
+                            /*_________ CONTAINER-ACCUEIL _______________*/
+
+
+.para-intro-accueil{
+    
+    line-height: 30px;
+    
+}
+
+.para-intro-accueil-border{
+    border-left: 4px solid var(--black);
+}
+
+
+
+
+.intro-accueil{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 80px;
+}
+
+.intro-accueil-img{
+    width: 300px;
+}
+
+
+.intro-accueil-img-shadow{
+    box-shadow: 40px -45px 10px grey;
+}
+
+
+
+.h1-accueil{
+    margin-top: 80px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+
+.bienfaits-card{
+    padding:50px;
+      
+}
+
+.biensfaits-accueil{
+    margin-top: 80px;
+}
+
+.card{
+    box-shadow: 20px -25px 10px grey;
+}
+
+
+.rappel-menu{
+    margin-top: 40px;
+
+
+}
+
+.titre-rappel-menu{
+font-weight: bold;
+text-decoration: underline;
+margin-bottom: 20px;
+}
+
+.rappel-menu>a{
+display: flex;
+text-decoration: none;
+color: var(--green);
+font-weight: bold;
+font-size: 18px;
+line-height: 29px;
+}
+
+.rappel-menu>a:hover{
+    font-size: 22px;
+    color: var(--brown);
+    transition: 0.4s;
+    border-bottom: 1px solid;
+    font-weight: bold;
+}
+
+
+.btn-resa{
+    margin-top: 40px;
+    
+}
+
+.div-btn-resa{
+
+    display: flex;
+    justify-content: center;
+    
+}
+
+/* .div-btn-resa:hover{
+    color: var(--green);
+    font-size: 30px;
+} */
+
+/*------------- A Propos ----------*/
+
+#carouselExampleFade{
+    width: 50%;
+}
+
+.container-carousel{
+    display: flex;
+    justify-content: center;
+}
+
+.header-items>a{
+text-decoration: none;
+color: white;
+
+}
+
+
+/* ------------------------ SOINS-REIKI --------------*/
+
+.card-soins{
+    width: 55%;
+    margin-top: 80px;
+    border: 0.8px solid var(--green);
+    border-radius: 8px;
+    box-shadow:-20px 20px 10px grey; 
+}
+
+.h5-soins{
+    font-size: 24px;
+}
+
+.card-text-soins{
+    margin-top: 20px;
+
+}
+
+.flex-soins{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* ---------------------------- MASSAGES --------------------------*/
+
+.massageh1{
+    font-family: 'inter', sans-serif;
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: var(--brown);
+    text-decoration: underline;
+    padding-top: 50px;
+
+}
+
+
+
+/* ---------------------------- GUIDANCESSS --------------------------*/
+
+.flex-guidances{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+.card-guidances{
+
+    width: 25%;
+    margin-top: 80px;
+    border: 0.8px solid var(--green);
+    border-radius: 8px;
+    box-shadow:-20px 20px 10px grey; 
+}
+
+.parag-guidances{
+padding: 30px;
+}
+
+
+/* ---------------------------- Tarifsss --------------------------*/
+
+/* -------------- Cours ----------------- */
+
+#container-cours{
+    gap: 40px;
+}
+
+
+/* ---------------------------- Connexion --------------*/
+
+.connexion-page{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+/* ---------------------------- Inscription --------------*/
+
+
+.inscription{
+
+    width: 35%;
+    margin-top: 80px;
+    border: 3px solid var(--brown);
+    border-radius: 8px;
+    box-shadow:-20px 20px 10px grey; 
+    background-color:antiquewhite
+
+}
+
+.inscription-page{
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-direction: column;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    /* background-color: aqua;
+    border: solid 1px green; */
+   
+    
+ 
+    
+}
+
+
+
+/* ---------------------------- Create-Cours-Admin --------------*/
+
+.create-cours-page{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+
+/*-------------- Tarrif- ---------------------------- */
+
+.div_tarrif{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    margin-top: 50px;
+    
+}
+
+
+/*-------------- Background Toph- ---------------------------- */
