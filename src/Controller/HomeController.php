@@ -51,4 +51,20 @@ class HomeController extends AbstractController
     {
         return $this->render('reqilibre/tarifs.html.twig');
     }
+
+
+
+
+
+////////////////////////////////// MENTIONS LEGALES
+
+    #[Route(path: '/mentionslegales', name: 'app_home_mentionslegales')]
+    public function mentionslegales() : Response 
+    {
+        return $this->render('confidentialite/mentionslegales.html.twig');
+    }
+
+
+
 }
+

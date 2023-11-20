@@ -119,7 +119,8 @@
 												<a href="{{path('app_cours_listCours')}}">Cours</a>
 
 												{% else %}
-												<a href="{{path('app_security_inscription')}}">Contact</a>
+												<a href="{{path('app_contact')}}">Contact</a>      
+												{# <a href="{{path('app_security_inscription')}}">Inscription</a> #}
 
 
 										
@@ -146,9 +147,34 @@
 						</div>
 
 				</header>
+
+
+			<main></main>
+
+
+				<footer>
+
+			<div id="footer-items">
+				
+					<div class="liensfooter"><br/><br/>
+						<a href="{{path('app_home_mentionslegales')}}">Mentions légales</a><br/>
+						<a href="{{path('app_contact')}}">Contact</a><br/>
+						<a href="{{path('app_home_home')}}">Accueil</a>
+					</div>
+
+
+					<div>
+						<img src="/images/reikilibre66.png">
+					</div>
+			</div>
+
+		</footer>
+
 				{% block body %}
 						
 				{% endblock %}
 		</body>
+
+		
 </html>
 

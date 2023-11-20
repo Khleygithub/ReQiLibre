@@ -18,6 +18,7 @@ body, html {
     align-items: stretch;
     flex-direction:column; */
     background-color: var(--white);
+    height: 100%;
 }
 
 
@@ -418,6 +419,40 @@ line-height: 29px;
     font-size: 30px;
 } */
 
+
+
+
+.logo-accueil-body{
+    display: flex;
+    justify-content: center;
+    margin: 40;
+    
+}
+
+
+
+
+.photo-seance-body{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+
+}
+
+
+
+
+.seance-img-body{
+    box-shadow: 10px -15px 30px var(--green);
+}
+
+
+
+
+.card-seance{
+    box-shadow: 20px -25px 30px var(--green);
+}
+
 /*------------- A Propos ----------*/
 
 #carouselExampleFade{
@@ -525,29 +560,67 @@ padding: 30px;
 
 .inscription{
 
-    width: 35%;
-    margin-top: 80px;
-    border: 3px solid var(--brown);
-    border-radius: 8px;
-    box-shadow:-20px 20px 10px grey; 
-    background-color:antiquewhite
+    display: flex;
+    justify-content: center;
+    
+    
 
 }
 
 .inscription-page{
-    display: flex;
-    justify-content:space-between;
-    align-items:center;
-    flex-direction: column;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    /* background-color: aqua;
-    border: solid 1px green; */
-   
     
- 
+    width: 50%;
+    padding: 30px;
+    margin-top: 80px;
+    border: 3px solid var(--brown);
+    border-radius: 8px;
+    box-shadow:-20px 20px 10px grey; 
+    background-color:antiquewhite;
+    
     
 }
+
+
+.inscription-page-img{
+    /* display: flex;
+    justify-content: space-around;
+    flex-direction: column; */
+}
+
+
+
+/* .main-inscription{
+    background-image: url(images/inscription/inscription.jpg);
+    background-position: 0;
+    background-repeat: repeat;
+    
+} */
+
+
+/* ---------------------------- Contact --------------*/
+
+.contact-page{
+    width: 50%;
+    margin-top: 80px;
+    border: 3px solid var(--brown);
+    border-radius: 8px;
+    box-shadow:-20px 20px 10px grey; 
+    background-color:antiquewhite;
+    padding: 40px;
+    
+    
+}
+
+.contact{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+
 
 
 
@@ -573,4 +646,58 @@ padding: 30px;
 }
 
 
+
+/*-------------- MENTIONS LEGALES ---------------------------- */
+
+
+.mentionslegales{
+    margin-top: 60px;
+    margin-left: 100px;
+
+
+}   
+
+
+.mentionslegales h3{
+    margin-top: 40px;
+}
+
+
+
+.liensfooter>a{
+    font-size: 14px;
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+
+.liensfooter>a:hover{
+    font-size: 15px;
+    transition: 0.3s;
+    font-weight: bold;
+    color: orange;
+}
+
+
+
 /*-------------- Background Toph- ---------------------------- */
+
+
+/*-------------- Footer- ---------------------------- */
+
+#footer-items{
+    
+
+    position: absolute;
+    bottom: -190rem;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    background-color: #017550;
+
+    
+}
+
+
+

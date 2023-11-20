@@ -1,0 +1,47 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Contact{% endblock %}
+
+{% block body %}
+
+<h1>Contact</h1>
+
+    <div>
+
+
+                <div class="contact-img">
+
+                </div>
+
+
+
+            <div class="contact">
+                <div class="contact-page">
+
+                {{ form(formulairecontact) }}
+
+                </div>
+            </div>
+
+    </div>    
+
+
+    <div class="mt-5 ml-5">
+        <p>
+        Pour toute demande de renseignement vous pouvez me contacter par email en remplissant le formulaire ci dessus.
+        </p><br/> <br/>
+
+
+
+    <h4>Adresse</h4>
+
+        <p>
+             rue Pierre Lescot 9400 Creteil - France<br/>
+                {# Tel : 07 77 96 56 09<br/> #}
+            Email : alcanchristelle@gmail.com<br/>
+            Site : www.reqilibre.com<br/>
+            <br/>
+        </p>
+
+    </div>
+{% endblock %}
